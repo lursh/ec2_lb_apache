@@ -1,0 +1,11 @@
+---
+# vars file for myec2launch
+aws_access_key_:
+aws_secret_key_: 
+image_: ami-04b1ddd35fd71475a
+instance_type_: t2.micro 
+ec2_region_: ap-south-1
+az_: ap-south-1a
+vpc_cidr_block_: 192.168.0.0/16
+subnet_cidr: 192.168.0.0/24
+key: ap-south_key

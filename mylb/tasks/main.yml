@@ -1,0 +1,11 @@
+---
+# tasks file for mylb
+- package: 
+    name: haproxy
+    state: present
+- template: 
+    src: haproxy.cfg
+    dest: /etc/haproxy/haproxy.cfg
+- service:
+    name: haproxy
+    state: restarted

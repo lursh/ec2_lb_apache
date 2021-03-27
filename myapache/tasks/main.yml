@@ -1,0 +1,11 @@
+---
+# tasks file for myapache
+- package: 
+    name: httpd
+    state: present
+- template:
+    src: index.html
+    dest: /var/www/html/index.html
+- service:
+    name: httpd
+    state: restarted
